@@ -14,7 +14,9 @@ param(
     [string]$subscriptionId,
     [string]$vaultUri
 )
-Install-Module -Name Az.Accounts -RequiredVersion 2.12.2
+Install-Module -Name Az.Accounts -RequiredVersion 2.19.0
+Import-Module -Name Az.Accounts -Force
+
 
 Install-Module Az.Purview -Force
 Import-Module Az.Purview
